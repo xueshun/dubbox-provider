@@ -19,7 +19,7 @@
     <dubbo:annotation package="xue.service" />
     
     <!-- kryo实现序列化  serialization="kryo" optimizer="bhz.utils.SerializationOptimizerImpl"-->
-    <dubbo:protocol name="dubbo"  />
+    <dubbo:protocol name="dubbo"  serialization="kryo" optimizer="xue.utils.SerializationOptimizerImpl"/>
 
     <!-- rest -->
     <dubbo:protocol name="rest" server="tomcat" port="8888" contextpath="provider" accepts="500" />

@@ -3,7 +3,7 @@ package xue.entity;
 import java.io.Serializable;
 import java.util.Map;
 
-public class Simple // implements Serializable
+public class Simple //implements Serializable
 {  
      private static final long serialVersionUID = -4914434736682797743L;  
      private String name;  

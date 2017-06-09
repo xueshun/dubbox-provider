@@ -10,7 +10,10 @@ import xue.service.SimpleService;
 import xue.entity.Simple;
 
 @Service("simpleService")
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass=xue.service.SimpleService.class, protocol={"dubbo"}, retries=0)
+@com.alibaba.dubbo.config.annotation.Service(
+		interfaceClass=xue.service.SimpleService.class, 
+		protocol={"dubbo"}, 
+		retries=0)
 public class SimpleServiceImpl implements SimpleService{
 
 	@Override

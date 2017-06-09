@@ -22,7 +22,10 @@ import com.alibaba.dubbo.rpc.protocol.rest.support.ContentType;
 //这里是spring的注解
 @Service("userService")
 //这个是dubbo的注解（同时提供dubbo本地，和rest方式）
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass=xue.service.UserService.class, protocol = {"rest", "dubbo"}, retries=0)
+@com.alibaba.dubbo.config.annotation.Service(
+		interfaceClass=xue.service.UserService.class, 
+		protocol = {"rest", "dubbo"},
+		retries=0)
 public class UserServiceImpl implements UserService{
 
 	public void testget() {
